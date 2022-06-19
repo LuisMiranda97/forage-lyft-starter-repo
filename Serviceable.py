@@ -1,5 +1,4 @@
 from abc import abstractmethod
-from car.Car import Car
 
 
 from abc import ABC, abstractmethod

@@ -1,6 +1,6 @@
-from battery import Battery
-from engine import Engine
-from serviceable import Serviceable
+from Battery import Battery
+from Engine import Engine
+from Serviceable import Serviceable
 
 class Car(Serviceable):
     def __init__(self, engine: Engine, battery: Battery):
@@ -8,4 +8,4 @@ class Car(Serviceable):
         self.battery = battery
 
     def needs_service(self):
-        return self.engine.needs_service or self.battery.needs_service
+        return self.engine.needs_service() or self.battery.needs_service()
